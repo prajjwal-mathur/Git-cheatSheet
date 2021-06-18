@@ -47,5 +47,8 @@ To add your SSH private(local) key to the ssh-agent:  ssh-add ~/.ssh/id_rsa
 To get the address of SSH key to be pasted in github SSH keys settings initializations:  tail ~/.ssh/id_rsa.pub
 To push the local git repository to remote repository: git push -u origin master
 
+To set-up alias i.e converting big and lengthy commands to short forms: git config --global alias.command_name_of_your_choice '<default command>'
+For example: We want to change the lengthy command for unstaging to short form: git config --global alias.unstage 'restore --staged --'
+		Now we just have to type:"git unstage <filename> ",to unstaged that particular file
 
 
