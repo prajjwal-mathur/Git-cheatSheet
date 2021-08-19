@@ -90,7 +90,7 @@
 - To remove any log from the history of your repo log(this will also revert files in that commit):
 	first retrieve the log commit unique id, above that commit, all commits will be removed: git log
 	then type : git reset <unique_id>
-- To add a file to directory: touch <filename>
+- To add a file to directory: touch <file_name>
 - To hide the non-committed but staged changes in order to use in future: git stash
 - To unhide the non-committed but staged changes: git stash pop
 - To remove/delete the stash: git stash clear

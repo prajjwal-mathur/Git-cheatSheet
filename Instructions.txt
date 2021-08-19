@@ -1,12 +1,12 @@
-This is my first repo, just testing and learning how this works.
+# This is my first repo, just testing and learning how this works.
 
-Git commands I've learned so far:
-
+## Git commands I've learned so far:
+---
 
 - To get the address for present working directory: pwd
-- To make a new folder: mkdir <file_name>
+- To make a new folder: mkdir <folder_name>
 - To get the list of contents in the folder : ls
-- To go in another folder inside pwd : cd inner_folder/
+- To go in another folder inside working directory : cd inner_folder/
 - To initialize a folder into git repo: git init
 - To add/stage all files in the repo: git add --a
 - To add a particular file: git add filename_with_extension
@@ -90,7 +90,7 @@ Git commands I've learned so far:
 - To remove any log from the history of your repo log(this will also revert files in that commit):
 	first retrieve the log commit unique id, above that commit, all commits will be removed: git log
 	then type : git reset <unique_id>
-- To add a file to directory: touch <filename>
+- To add a file to directory: touch <file_name>
 - To hide the non-committed but staged changes in order to use in future: git stash
 - To unhide the non-committed but staged changes: git stash pop
 - To remove/delete the stash: git stash clear
