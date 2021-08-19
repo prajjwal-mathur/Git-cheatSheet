@@ -4,6 +4,7 @@ Git commands I've learned so far:
 
 
 - To get the address for present working directory: pwd
+- To make a new folder: mkdir <file_name>
 - To get the list of contents in the folder : ls
 - To go in another folder inside pwd : cd inner_folder/
 - To initialize a folder into git repo: git init
@@ -67,10 +68,10 @@ Git commands I've learned so far:
  	git config --global alias.command_name_of_your_choice '<default command>'
 - For example: We want to change the lengthy command for unstaging to short form:
  	git config --global alias.unstage 'restore --staged --'
-     Now we just have to type:"git unstage <filename> ",to unstaged that particular file.
+     Now we just have to type:"git unstage <filename> ", to unstage that particular file.
 
 - To make a new branch: git checkout -b <branch_name>
-- To go to any other branch: git checkout <branch_name>  ;
+- To go to any other branch: git checkout <branch_name>  
  	for example- if you want to go back to master branch simply type: git checkout master
 -To get the names of all branches: git branch
 -To merge a branch into master, first merge (branch to be merged should be committed and clean),
@@ -85,3 +86,11 @@ Git commands I've learned so far:
 - To delete remote branch: git push -d origin <branch_to_be_deleted>
 
 - To update the local repository from github's remote repo: git pull origin master
+- To see the hidden files inside a folder: ls -a
+- To remove any log from the history of your repo log(this will also revert files in that commit):
+	first retrieve the log commit unique id, above that commit, all commits will be removed: git log
+	then type : git reset <unique_id>
+- To add a file to directory: touch <filename>
+- To hide the non-committed but staged changes in order to use in future: git stash
+- To unhide the non-committed but staged changes: git stash pop
+- To remove/delete the stash: git stash clear
