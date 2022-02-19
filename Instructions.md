@@ -94,3 +94,4 @@
 - To hide the non-committed but staged changes in order to use in future: git stash
 - To unhide the non-committed but staged changes: git stash pop
 - To remove/delete the stash: git stash clear
+- To retrieve the stash and apply into the branch: git stash apply
